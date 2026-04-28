@@ -58,6 +58,8 @@ Or interactively:
 | `add_product_recipe.sql` | `Products.RecipeId` FK for auto ingredient deduction on restock |
 | `add_product_is_ingredient.sql` | `Products.IsIngredient` flag to mark raw materials |
 | `add_plan_change_request_invoice.sql` | `PlanChangeRequests.InvoiceId` FK to link billing invoices |
+| `add_product_variations.sql` | `ProductVariations` table + `HasProductVariations` flag on `PlanConfigs` |
+| `rename_advertisements_to_banners.sql` | Rename `Advertisements` table → `Banners`; `HasAdvertisements` column → `HasBanners` on `PlanConfigs` |
 
 ---
 
