@@ -60,6 +60,7 @@ Or interactively:
 | `add_plan_change_request_invoice.sql` | `PlanChangeRequests.InvoiceId` FK to link billing invoices |
 | `add_product_variations.sql` | `ProductVariations` table + `HasProductVariations` flag on `PlanConfigs` |
 | `rename_advertisements_to_banners.sql` | Rename `Advertisements` table → `Banners`; `HasAdvertisements` column → `HasBanners` on `PlanConfigs` |
+| `add_product_custom_fields.sql` | `Products.CustomFields` jsonb column for arbitrary per-product key-value metadata |
 
 ---
 
