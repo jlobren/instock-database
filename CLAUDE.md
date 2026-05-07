@@ -61,6 +61,7 @@ Or interactively:
 | `add_product_variations.sql` | `ProductVariations` table + `HasProductVariations` flag on `PlanConfigs` |
 | `rename_advertisements_to_banners.sql` | Rename `Advertisements` table → `Banners`; `HasAdvertisements` column → `HasBanners` on `PlanConfigs` |
 | `add_product_custom_fields.sql` | `Products.CustomFields` jsonb column for arbitrary per-product key-value metadata |
+| `add_invoice_tax_fields.sql` | `Invoices.SubTotal`, `TaxRate`, `TaxAmount` columns; backfills from old "Tax (X%)" line items; removes those line items |
 
 ---
 
