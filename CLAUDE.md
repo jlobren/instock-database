@@ -62,6 +62,10 @@ Or interactively:
 | `rename_advertisements_to_banners.sql` | Rename `Advertisements` table → `Banners`; `HasAdvertisements` column → `HasBanners` on `PlanConfigs` |
 | `add_product_custom_fields.sql` | `Products.CustomFields` jsonb column for arbitrary per-product key-value metadata |
 | `add_invoice_tax_fields.sql` | `Invoices.SubTotal`, `TaxRate`, `TaxAmount` columns; backfills from old "Tax (X%)" line items; removes those line items |
+| `add_product_preorder_lead_time.sql` | `Products.PreOrderLeadTimeDays` nullable integer — estimated fulfillment days shown to customers on the storefront |
+| `add_ad_expenses.sql` | `AdExpenses` table — expense records per client with optional product attribution |
+| `add_expense_category.sql` | `AdExpenses.Category` TEXT column — expense category (Ads, Rent, Utilities, etc.); defaults to 'Ads' for existing rows |
+| `add_member_salary.sql` | `CompanyMembers.PayPeriod` and `CompanyMembers.SalaryRate` — pay period type and rate for payroll cost tracking |
 
 ---
 

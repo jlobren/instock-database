@@ -1,0 +1,2 @@
+ALTER TABLE "AdExpenses"
+    ADD COLUMN IF NOT EXISTS "Category" TEXT NOT NULL DEFAULT 'Ads';
