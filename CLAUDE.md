@@ -66,6 +66,8 @@ Or interactively:
 | `add_ad_expenses.sql` | `AdExpenses` table — expense records per client with optional product attribution |
 | `add_expense_category.sql` | `AdExpenses.Category` TEXT column — expense category (Ads, Rent, Utilities, etc.); defaults to 'Ads' for existing rows |
 | `add_member_salary.sql` | `CompanyMembers.PayPeriod` and `CompanyMembers.SalaryRate` — pay period type and rate for payroll cost tracking |
+| `add_salary_disbursements.sql` | `SalaryDisbursements` table — records of actual salary payments to team members with period range and paid date |
+| `alter_bank_accounts_opening_balance.sql` | `BankAccounts.OpeningBalance` — starting balance used for cash-flow running balance computation |
 
 ---
 
