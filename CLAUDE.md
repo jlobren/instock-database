@@ -68,6 +68,7 @@ Or interactively:
 | `add_member_salary.sql` | `CompanyMembers.PayPeriod` and `CompanyMembers.SalaryRate` — pay period type and rate for payroll cost tracking |
 | `add_salary_disbursements.sql` | `SalaryDisbursements` table — records of actual salary payments to team members with period range and paid date |
 | `alter_bank_accounts_opening_balance.sql` | `BankAccounts.OpeningBalance` — starting balance used for cash-flow running balance computation |
+| `add_day_close_records.sql` | `DayCloseRecords` table — end-of-day cash reconciliation with physical cash count, variance, and notes per client per date |
 
 ---
 
