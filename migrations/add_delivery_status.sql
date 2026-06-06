@@ -1,2 +1,0 @@
-ALTER TABLE "Deliveries"
-    ADD COLUMN IF NOT EXISTS "Status" VARCHAR(50) NOT NULL DEFAULT 'Packed';

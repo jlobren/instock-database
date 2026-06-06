@@ -1,3 +1,0 @@
-ALTER TABLE "CompanyMembers"
-    ADD COLUMN IF NOT EXISTS "PayPeriod"  TEXT,
-    ADD COLUMN IF NOT EXISTS "SalaryRate" NUMERIC(18,2);
