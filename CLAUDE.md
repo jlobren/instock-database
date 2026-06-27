@@ -69,6 +69,10 @@ Or interactively:
 | `add_salary_disbursements.sql` | `SalaryDisbursements` table — records of actual salary payments to team members with period range and paid date |
 | `alter_bank_accounts_opening_balance.sql` | `BankAccounts.OpeningBalance` — starting balance used for cash-flow running balance computation |
 | `add_day_close_records.sql` | `DayCloseRecords` table — end-of-day cash reconciliation with physical cash count, variance, and notes per client per date |
+| `037_add_ingredients.sql` | `Ingredients` table (stripped-down sibling of `Products`); backfills from `Products` where `IsIngredient = true`, preserving Ids |
+| `038_add_ingredient_movements.sql` | `IngredientMovements` table (lean mirror of `StockMovements`, cost snapshots only); backfills the migrated products' movement history |
+| `039_repoint_recipe_ingredients.sql` | Repoint `RecipeIngredients.ProductId` → `IngredientId` (FK to `Ingredients`, SetNull); Ids preserved so it's a column swap |
+| `040_drop_ingredient_products.sql` | Delete the migrated ingredient rows from `Products` and drop the `Products.IsIngredient` column + index |
 
 ---
 
