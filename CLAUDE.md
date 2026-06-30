@@ -73,6 +73,7 @@ Or interactively:
 | `038_add_ingredient_movements.sql` | `IngredientMovements` table (lean mirror of `StockMovements`, cost snapshots only); backfills the migrated products' movement history |
 | `039_repoint_recipe_ingredients.sql` | Repoint `RecipeIngredients.ProductId` → `IngredientId` (FK to `Ingredients`, SetNull); Ids preserved so it's a column swap |
 | `040_drop_ingredient_products.sql` | Delete the migrated ingredient rows from `Products` and drop the `Products.IsIngredient` column + index |
+| `041_add_ingredient_supplier_prices.sql` | `IngredientSupplierPrices` table (multiple price/pack options per ingredient); `Ingredients.AverageUnitCost` (moving weighted-average cost per base unit, seeded from `SupplierPrice`); `IngredientMovements.EnteredQuantity`/`EnteredUnit` (originally entered amount/unit for stock history) |
 
 ---
 
